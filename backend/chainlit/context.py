@@ -66,7 +66,7 @@ def init_ws_context(session_or_sid: Union[WebsocketSession, str]) -> ChainlitCon
         session = session_or_sid
     context = ChainlitContext(session)
     context_var.set(context)
-    local_step.set([])
+    local_steps.set([])
     return context
 
 
